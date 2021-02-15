@@ -1,14 +1,55 @@
 <html>
 <head>
     <title>Kae</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <head>
-        Blog
-    </head>
+    <header>
+        <!-- <header>
+            <h1>
+                Blog
+            </h1>
 
-    <h1> 
-        Projects
-    </h1>
+            <h2> 
+                Projects
+            </h2>
+        </header>  -->
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Home')" id="default">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Blog')">Blog</button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+            <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="Home" class="tabcontent">
+            <h1>
+                Kae's Place
+            </h1>
+            <h4>
+                Recents:
+            </h4>
+        </div>
+        
+        <div id="Blog" class="tabcontent">
+            <h3>Blog</h3>
+            <p>Personal blog and online journal</p>
+        </div>
+        
+        <div id="Projects" class="tabcontent">
+            <h3>Projects</h3>
+            <p>See my recent projects:</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Just a programmer who loves computers, techie stuff, and all kinds of awesome music and art</p>
+        </div>
+    </header>
+
+    <script src="sketch.js"></script>
+
 </body>
 </html>
